@@ -1,0 +1,22 @@
+<%= form_for(tag) do |form| %>
+
+  <% if tag.errors.any? %>
+    <div>
+      <h2><%= pluralize(tag.errors.count, "error") %> prohibited this tag from being saved:</h2>
+
+      <ul>
+        <% tag.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :tag_name %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

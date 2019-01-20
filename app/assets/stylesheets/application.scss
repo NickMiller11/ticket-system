@@ -1,0 +1,61 @@
+@import "bourbon";
+@import "base/base";
+@import "scaffolds";
+
+body {
+  margin: 0 2em;
+}
+
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.main-nav {
+  li {
+    display: inline;
+  }
+  overflow: hidden;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+select {
+  width: auto;
+}
+
+textarea {
+  min-height: 10rem;
+}
+
+th.number,
+td.number {
+  text-align: center;
+}
+
+.ticket-filters {
+  select {
+    display: inline;
+  }
+  button {
+    padding: .4em .7em;
+    font-size: 12px;
+  }
+}
+
+.comment {
+  margin-bottom: 2em;
+}
+
+.reset {
+  font-size: .8rem;
+}
+
+.empty-list {
+  font-style: italic;
+}
